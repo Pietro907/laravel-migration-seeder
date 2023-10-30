@@ -1,5 +1,5 @@
 <?php
-
+use database\seeders\TrainTableSeeder;
 /* 
 
 Creiamo una tabella trains con relativa Migration e Model.
@@ -47,7 +47,12 @@ dalla data odierna.
 
 <body>
 
-    <div class="container my-5">
+    @section('header')  {{-- uguale per tutti --}}
+
+    @yield('main_content')  {{-- cambia a serconda della pagina --}}
+
+
+   {{--  <div class="container my-5">
         <div class="row">
             <div class="col-2">
                 <div class="card">
@@ -63,7 +68,7 @@ dalla data odierna.
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   --}}  
 
 </body>
 

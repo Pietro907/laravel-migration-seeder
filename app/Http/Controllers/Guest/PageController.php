@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Guest;
 
+use App\Models\Train;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TrainController extends PageController
+class PageController extends Controller
 {
     public function index(){
-        /* return view('layout.app',['Train' => Train::all()]); */
+        return view('pages.trains',['Train' => Train::all()]);
        
     }
 }
