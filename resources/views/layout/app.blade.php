@@ -16,7 +16,7 @@ Ogni treno dovrà avere almeno:
 - Cancellato
  
 
-> Oltre ai campi impostati da laravel di default in tutte le migrazioni :occhiolino:
+> Oltre ai campi impostati da laravel di default in tutte le migrazioni
 
 Inserite qualche dato usando un seeder tramite Faker PHP per popolare la vostra tabella.
 
@@ -51,7 +51,7 @@ dalla data odierna.
         <div class="row">
             <div class="col-2">
                 <div class="card">
-                    <p>Azienda</p>
+                    <p>{{$new_train->azienda}}</p>
                     <p>Stazione di partenza</p>
                     <p>Stazione di arrivo</p>
                     <p>Orario di partenza</p>
